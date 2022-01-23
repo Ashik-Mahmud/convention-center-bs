@@ -28,9 +28,7 @@
 .font-semibold{
     font-weight: 600;
 }
-.transition{
-    transition: all 0.25ms;
-}
+
 .colorize{
     color: var(--primary-color);
 }
@@ -45,4 +43,12 @@
 
 .text-convention {
     color: var(--primary-color);
+}
+
+.hero .carousel-item{
+    height: 90.5vh;
+}
+.hero .carousel-item img{
+    height: 100%;
+    object-fit: cover;
 }
