@@ -1,0 +1,48 @@
+/* stylesheets  */
+
+/* import fonts from google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+/* variables for  */
+:root {
+    /* fonts  */
+    --poppins: 'Poppins', sans-serif;
+    /* colors  */
+    --primary-color: #3F87F5;
+}
+
+/* utitlities classes  */
+
+.font-poppins {
+    font-family: var(--poppins);
+}
+.font-thin{
+    font-weight: 300;
+}
+.font-normal{
+    font-weight: 400;
+}
+.font-medium{
+    font-weight: 500;
+}
+.font-semibold{
+    font-weight: 600;
+}
+.transition{
+    transition: all 0.25ms;
+}
+.colorize{
+    color: var(--primary-color);
+}
+.bg-active {
+    background: #3F87F5;
+    box-shadow: 0px 42px 34px rgba(63, 135, 245, 0.25);
+}
+
+.bg-convention {
+    background-color: var(--primary-color);
+}
+
+.text-convention {
+    color: var(--primary-color);
+}
