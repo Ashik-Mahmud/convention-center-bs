@@ -52,3 +52,10 @@
     height: 100%;
     object-fit: cover;
 }
+.top-right-corner{
+    right: 30px;
+    top: -10px;
+}
+.rounded-perfect{
+    border-radius: 20px;
+}
