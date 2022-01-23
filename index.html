@@ -17,6 +17,15 @@
 </head>
 
 <body class="font-poppins">
+    <!-- toast  -->
+    <div class="toast show position-fixed fade z-index">
+        <div class="toast-body ">
+            <img src="./assets/icons/Vector.svg" alt="img-fluid">
+            <span class="text align-middle ms-2">20% of for next booking</span>
+            <button class="btn-close float-end" data-bs-dismiss="toast"></button>
+        </div>
+    </div>
+
     <!-- header sections start here  -->
     <header id="header">
         <!-- navigations  -->
@@ -35,7 +44,7 @@
                         <li class="nav-item px-md-2"><a href="#header" class="nav-link text-dark">Home</a></li>
                         <li class="nav-item px-md-2"><a href="#about" class="nav-link text-dark">About Us</a></li>
                         <li class="nav-item px-md-2"><a href="#contact" class="nav-link text-dark">Contact Us</a></li>
-                        <li class="nav-item ps-lg-3"><a href="#subscribe"
+                        <li class="nav-item ps-lg-3"><a href="#subscribe" data-bs-toggle="modal"
                                 class="nav-link btn bg-active text-white px-3 ">Subscribe</a></li>
                     </ul>
                 </menu>
@@ -121,7 +130,7 @@
     <!-- main sections start here  -->
     <main id="main">
         <!-- about us section  -->
-        <section class="about pt-5 pb-3">
+        <section id="about" class="about pt-5">
             <div class="about-container container pt-md-5">
                 <div class="row justify-content-lg-between gy-4 align-items-center">
                     <div class="col-md-6">
@@ -256,9 +265,9 @@
             </div>
         </section>
         <!-- testimonial sections start here  -->
-        <section class="clients py-5">
+        <section class="clients py-5 ">
             <div class="clients-container container">
-                <h1 class="fs-2 font-semibold text-center my-3  text-dark  pb-3">Happy Client Say</h1>
+                <h1 class="fs-2 font-semibold text-center mb-3  text-dark ">Happy Client Say</h1>
                 <div class="row my-md-5 gy-5 ">
                     <div class="col-lg-4 col-md-6">
                         <div class="card border-0 shadow border border-light text-center px-3 py-3">
@@ -370,6 +379,57 @@
                 </div>
             </div>
         </section>
+        <!-- contact us section start here  -->
+        <section class="contact py-5 bg-light" id="contact">
+            <div class="container contact-container">
+                <h1 class="fs-2 font-semibold text-center my-3  text-dark  pb-3">For Any Query & Contact</h1>
+                <div class="row  py-3 justify-content-between align-items-stretch">
+                    <div class="col-12 col-md-5 col-sm-12 bg-white p-4 shadow-sm border border-0 border-end-1">
+                        <form action="#">
+                            <div class="title mb-3">
+                                <h3><i class="bi bi-envelope-check"></i> For Booking</h3>
+                                <small>[Please Contact Us 8:00AM to 10:00PM]</small>
+                            </div>
+                            <div class="form-area">
+                                <div class="mb-3">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" class="form-control" placeholder="Full Name" id="name">
+                                </div>
+                                <div class="row mb-3">
+                                    <div class=" col">
+                                        <label for="subject">Subject</label>
+                                        <input type="text" class="form-control" placeholder="Subject" id="subject">
+                                    </div>
+                                    <div class=" col">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" placeholder="Email" id="email">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="query">Details </label>
+                                    <textarea name="query" id="query" rows="4" class="form-control"
+                                        placeholder="Write your Details about you!"></textarea>
+                                </div>
+                                <div class="mb-2">
+                                    <button class="btn bg-active text-white py-3 px-3 ">Send for booking <i
+                                            class="bi bi-send-check"></i></button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="col-12 col-md-7 col-sm-12 border border-0 border-start  bg-white p-4 shadow-sm">
+                        <h3 class="text-dark mb-3"> <i class="bi bi-geo-alt"></i> For Track </h3>
+                        <!-- iframes  -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.9320840674472!2d89.35537811539889!3d24.90029814979128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fc5580e6d1053d%3A0x79830ecb3e34f2f4!2sMomo%20Inn%20Hotel%20%26%20Resort!5e0!3m2!1sen!2sbd!4v1642973654724!5m2!1sen!2sbd"
+                            class="w-100 border border-4 border-light" height="450" style="border:0;" allowfullscreen=""
+                            loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
     <!-- main sections end here  -->
 
@@ -385,10 +445,12 @@
                 <div class="col-lg-4">
                     <h3 class="text-white mb-2">Get The App</h3>
                     <div class="my-2 d-flex align-items-center gap-3 mt-3">
-                        <a href="https://apps.apple.com/us/app/programming-hero-coding-fun/id1478201849"  target="_blank">
+                        <a href="https://apps.apple.com/us/app/programming-hero-coding-fun/id1478201849"
+                            target="_blank">
                             <img src="./assets/icons/App Store Badge.png" alt="app store" class="img-fluid">
                         </a>
-                        <a href="https://play.google.com/store/apps/details?id=com.learnprogramming.codecamp"  target="_blank">
+                        <a href="https://play.google.com/store/apps/details?id=com.learnprogramming.codecamp"
+                            target="_blank">
                             <img src="./assets/icons/Google Play Badge.png" alt="google app store" class="img-fluid">
                         </a>
                     </div>
@@ -397,6 +459,29 @@
         </div>
     </footer>
     <!-- footer sections end here  -->
+
+    <!-- markup for modal something  -->
+    <div class="modal fade" id="subscribe">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form action="#">
+                    <div class="modal-header">
+                        <h2>Subscribe to get discount</h2>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-2">
+                            <label for="email">Email for</label>
+                            <input type="email" id="email" placeholder="Your email -" class="form-control">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn bg-convention px-4 py-2 text-white">Subscirbe <i class="bi bi-bell"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <!-- scripts for bootstrap js  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
